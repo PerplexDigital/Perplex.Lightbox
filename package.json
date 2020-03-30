@@ -1,0 +1,24 @@
+{
+  "name": "perplex-lightbox",
+  "version": "1.0.3",
+  "description": "",
+  "source": "src/scripts/index.js",
+  "main": "dist/perplex.lightbox.mjs",
+  "unpkg": "dist/perplex.lightbox.umd.js",
+  "scripts": {
+    "start": "http-server demo",
+    "watch": "microbundle watch --format umd --entry demo/src/index.js --output demo/dist/bundle.js",
+    "build": "microbundle --name PerplexLightbox --format es,cjs,umd --sourcemap false --watch --no-compress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.1",
+    "microbundle": "^0.11.0"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}

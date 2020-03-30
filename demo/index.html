@@ -1,0 +1,53 @@
+<html>
+
+	<head>
+		<title>PerplexLightbox Demo</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="icon" href="/" />
+		<link rel="stylesheet" href="./src/style.css" />
+	</head>
+
+	<body>
+	    <div class="pplx-lightbox__container js-lightbox" role="dialog" aria-modal="true" aria-labelledby="Modal X" aria-describedby="Extra information about X">
+	        <div class="pplx-lightbox__scroll-container">
+	            <section class="pplx-lightbox__item js-lightboxElem">
+	                <button type="button" class="pplx-lightbox__close js-lightboxClose">
+	                	<span class="vh">Close</span>
+	                    <svg xmlns="http://www.w3.org/2000/svg" style="fill: currentColor; width: 1.6rem; height: 1.6rem;" viewBox="0 0 40 40">
+	                        <path d="M29.9,27.9l-7.9-8l7.8-7.8c0.5-0.5,0.5-1.3,0-1.8l-0.2-0.2c-0.5-0.5-1.3-0.5-1.8,0L20,17.9l-7.9-7.8c-0.5-0.5-1.3-0.5-1.8,0l-0.2,0.2c-0.5,0.5-0.5,1.3,0,1.8l7.9,7.8l-8,8c-0.4,0.5-0.4,1.3,0,1.8l0.2,0.2c0.5,0.5,1.3,0.5,1.8,0l8-8l7.9,8c0.4,0.5,1.2,0.5,1.8,0l0.2-0.2C30.4,29.2,30.4,28.4,29.9,27.9z"/>
+	                    </svg>
+	                </button>
+	                <header class="pplx-lightbox__header l-item l-item--xs">
+	                    <h3>Qui igitur convenit ab alia voluptate.</h3>
+	                    <p>Nihil opus est exemplis hoc facere longius. Sit sane ista voluptas.</p>
+	                </header>
+	                <article class="pplx-lightbox__content l-item l-item--sm">
+	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui igitur convenit ab alia voluptate dicere naturam proficisci, in alia summum bonum ponere? Quid ergo? Facit enim ille duo seiuncta ultima bonorum, quae ut essent vera, coniungi debuerunt; Ergo hoc quidem apparet, nos ad agendum esse natos. Illud dico, ea, quae dicat, praeclare inter se cohaerere. Duo Reges: constructio interrete. Sed haec quidem liberius ab eo dicuntur et saepius. Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Quare conare, quaeso. </p>
+
+						<p>Quamquam id quidem, infinitum est in hac urbe; Mihi enim satis est, ipsis non satis. Ne discipulum abducam, times. Nihil opus est exemplis hoc facere longius. Sit sane ista voluptas. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolere malum est: in crucem qui agitur, beatus esse non potest. In qua si nihil est praeter rationem, sit in una virtute finis bonorum; Atqui reperies, inquit, in hoc quidem pertinacem; Quae in controversiam veniunt, de iis, si placet, disseramus. </p>
+
+						<form>
+							<label for="question-1">Question</label>
+							<input id="question-1" placeholder="Answer">
+							<button type="submit">Send</button>
+						</form>
+
+						<p>Animi enim quoque dolores percipiet omnibus partibus maiores quam corporis. Fatebuntur Stoici haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse. Etenim nec iustitia nec amicitia esse omnino poterunt, nisi ipsae per se expetuntur. Portenta haec esse dicit, neque ea ratione ullo modo posse vivi; Quod cum ille dixisset et satis disputatum videretur, in oppidum ad Pomponium perreximus omnes. Ut in geometria, prima si dederis, danda sunt omnia. Verba tu fingas et ea dicas, quae non sentias? Itaque contra est, ac dicitis; </p>
+	                </article>
+	            </section>
+	        </div>
+	        <div class="pplx-lightbox__background"></div>
+	    </div>
+
+	    <button class="js-triggerBox">Open lightbox</button>
+
+	    <script
+		  src="https://code.jquery.com/jquery-3.4.1.js"
+		  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		  crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.js"></script>
+
+	  	<script src="dist/bundle.umd.js"></script>
+	</body>
+
+</html>
