@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "^0.12.1",
-    "microbundle": "^0.11.0"
+    "http-server": "^0.12.3",
+    "microbundle": "^0.12.0"
   },
   "prettier": {
     "printWidth": 100,
