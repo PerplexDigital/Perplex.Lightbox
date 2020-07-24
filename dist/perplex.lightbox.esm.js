@@ -149,9 +149,11 @@ var Lightbox = /*#__PURE__*/function () {
     this.addListeners();
 
     if (state.animFrameworks.gsap) {
-      state.runningAnimations.container = gsap.to(this.element, this.animationProps.duration / 1000, {
-        opacity: 1,
+      state.runningAnimations.container = gsap.fromTo(this.element, this.animationProps.duration / 1000, {
+        opacity: 0,
         display: "block"
+      }, {
+        opacity: 1
       });
       state.runningAnimations.item = gsap.fromTo(this.item, this.animationProps.duration / 1000, {
         scale: 0.9,
