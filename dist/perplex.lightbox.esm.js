@@ -312,4 +312,4 @@ function polyfills() {
 
 onInit();
 
-module.exports = Lightbox;
+export default Lightbox;

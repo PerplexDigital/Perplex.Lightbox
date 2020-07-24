@@ -1,11 +1,12 @@
 {
   "name": "perplex-lightbox",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "source": "src/scripts/index.js",
   "main": "dist/perplex.lightbox.mjs",
   "unpkg": "dist/perplex.lightbox.umd.js",
   "scripts": {
+    "serve": "start npm run build && start npm run start && start npm run watch",
     "start": "http-server demo",
     "watch": "microbundle watch --format umd --entry demo/src/index.js --output demo/dist/bundle.js",
     "build": "microbundle --name PerplexLightbox --format es,cjs,umd --sourcemap false --watch --no-compress"

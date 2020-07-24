@@ -141,7 +141,7 @@
 
 		// open the lightbox with GSAP
 		if (state.animFrameworks.gsap) {
-			state.runningAnimations.container = gsap.to(this.element, this.animationProps.duration / 1000, { opacity: 1, display: "block" } ); 
+			state.runningAnimations.container = gsap.fromTo(this.element, this.animationProps.duration / 1000, { opacity: 0, display: "block"}, { opacity: 1 } ); 
 			state.runningAnimations.item = gsap.fromTo(this.item, this.animationProps.duration / 1000, { scale: 0.9, opacity: 0 }, {scale: 1, opacity: 1, ease: this.animationProps.item.gsapEaseOpen, onStart: this.runCallbacks, onStartParams: [this.callbacks.onOpenBegin], onComplete: this.runCallbacks, onCompleteParams: [this.callbacks.onOpenEnd],} ); 
 		} 
 		else {
