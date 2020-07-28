@@ -1,5 +1,5 @@
 /**
- * PerplexLightbox v1.0.3
+ * PerplexLightbox v1.0.5
  */
 
 /**
@@ -257,7 +257,7 @@
 	}
 
 	closeOnClick(e) {
-		if(!e.target.closest(".js-lightboxElem")) {
+		if (e.target.closest(".js-lightboxElem") !== null && !e.target.closest(".js-lightboxElem")) {
 			this.close();
 		}
 	}

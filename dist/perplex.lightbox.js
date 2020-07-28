@@ -280,7 +280,7 @@ var Lightbox = /*#__PURE__*/function () {
   };
 
   _proto.closeOnClick = function closeOnClick(e) {
-    if (!e.target.closest(".js-lightboxElem")) {
+    if (e.target.closest(".js-lightboxElem") !== null && !e.target.closest(".js-lightboxElem")) {
       this.close();
     }
   };
