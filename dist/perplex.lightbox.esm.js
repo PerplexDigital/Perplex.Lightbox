@@ -71,8 +71,8 @@ var func = {
       this.runCallbacks(this.callbacks.onCloseBegin);
     },
     onCloseEnd: function onCloseEnd() {
-      this.element.style.display = "none";
-      this.item.style.opacity = "0";
+      this.element.style.display = 'none';
+      this.item.style.opacity = '0';
       this.runCallbacks(this.callbacks.onCloseEnd);
     }
   }
@@ -151,7 +151,7 @@ var Lightbox = /*#__PURE__*/function () {
     if (state.animFrameworks.gsap) {
       state.runningAnimations.container = gsap.fromTo(this.element, this.animationProps.duration / 1000, {
         opacity: 0,
-        display: "block"
+        display: 'block'
       }, {
         opacity: 1
       });
@@ -168,7 +168,7 @@ var Lightbox = /*#__PURE__*/function () {
         onCompleteParams: [this.callbacks.onOpenEnd]
       });
     } else {
-      this.element.style.display = "block";
+      this.element.style.display = 'block';
       this.element.style.animation = "containerShow " + this.animationProps.duration / 1000 + "s forwards";
       this.item.style.animation = "itemShow " + this.animationProps.duration / 1000 + "s " + this.animationProps.item.staticEaseOpen + " forwards";
     }
@@ -181,7 +181,7 @@ var Lightbox = /*#__PURE__*/function () {
       func.killRunningAnimations();
       state.runningAnimations.container = gsap.to(this.element, this.animationProps.duration / 1500, {
         opacity: 0,
-        display: "none"
+        display: 'none'
       });
       state.runningAnimations.item = gsap.to(this.item, this.animationProps.duration / 1500, {
         scale: 0.95,
@@ -280,7 +280,7 @@ var Lightbox = /*#__PURE__*/function () {
   };
 
   _proto.closeOnClick = function closeOnClick(e) {
-    if (e.target.closest(".js-lightboxElem") !== null && !e.target.closest(".js-lightboxElem")) {
+    if (e.target.closest('.js-lightboxElem') !== null && !e.target.closest('.js-lightboxElem')) {
       this.close();
     }
   };
