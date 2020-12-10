@@ -1,8 +1,12 @@
 # Perplex Lightbox
-Lightbox/Modal that is accessible and supports animations (CSS & GSAP)
+
+Lightweight and Accessible Lightbox/Modal that supports CSS or GSAP animations out of the box.
+
+The plugin checks if the website is already loading GSAP. If so, GSAP will be used for animations.
+If not, CSS-animations will be used.
 
 ## Import plugin
-The plugin is available as a ES-module, CommonJS-module and Universal Module (UMD)
+The plugin is available as a ES-module, CommonJS-module and Universal Module (UMD).
 #### ESM:
 ```js
 import Lightbox from '../../dist/perplex.lightbox.js';
@@ -35,7 +39,7 @@ options | object | {} | Options for controlling animations.
 Option | Type | Default | Description
 ------ | ---- | ------- | -----------
 duration | Number | 400 | Duration of the animations (in ms).
-staticEaseOpen | String | "cubic-bezier(0.21, 0.49, 0.1, 0.99)"" | Easing to apply on the CSS-animation when lightbox opens.
+staticEaseOpen | String | "cubic-bezier(0.21, 0.49, 0.1, 0.99)" | Easing to apply on the CSS-animation when lightbox opens.
 staticEaseClose | String | "ease-in" | Easing to apply on the CSS-animation when lightbox closes.
 gsapEaseOpen | String | "expo.out" | Easing to apply on when lightbox opens.
 gsapEaseClose | String | "power1.in" | Easing to apply on when lightbox closes.
